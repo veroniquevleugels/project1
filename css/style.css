@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap");
+
+/* GENERAL */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3em;
+  font-weight: 400;
+  color: rgb(5, 4, 0);
+  background-color: #f0fff3;
+}
+
+.hidden {
+  display: none;
+}
+
+.titel {
+  color: red;
+  font-size: 2em;
+  border-bottom: 0.1em solid red;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+/* HEADER MENU */
+header {
+  background-color: #62d2a2;
+  padding-bottom: 0.7em;
+}
+
+nav {
+  margin: 1.5rem auto 0rem auto;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1.2rem;
+  color: #000000;
+  background-color: #f0fff3;
+  border: #626262 solid 2px;
+  border-radius: 12px;
+  display: block;
+  text-decoration: none;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.active {
+  color: #000000;
+  background-color: #9df3c4;
+  border: #000000 solid 2px;
+}
+
+/* BANNER */
+
+#banner {
+  display: flex;
+  justify-content: center; /* Horizontaal centreren */
+  align-items: center; /* Verticaal centreren */
+  width: 1080px;
+  margin: 0 auto;
+}
+
+#imgBanner {
+  max-width: 100%; /* Optioneel, om ervoor te zorgen dat de afbeelding niet breder is dan de container */
+}
+
+/* HOME CONTENT */
+
+main {
+  width: 1080px;
+  margin: 0 auto;
+  background-color: #f0fff3;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+article {
+  padding-bottom: 1em;
+}
+
+article > p {
+  padding: 0.5em 0;
+}
+
+.mainHome {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 1em 2em 1em 2em;
+}
+
+.mainHome > img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.mainHome > article {
+  padding: 0 2em;
+  padding-left: 4em;
+}
+
+.mainHome > article > h1 {
+  margin-bottom: 1em;
+  font-size: 2rem;
+}
+
+.mainHome > article > p {
+  padding-bottom: 1em;
+  font-size: 1.5rem;
+}
+
+.mainHome > article > p {
+  padding-bottom: 1em;
+  font-size: 1.5rem;
+}
+
+.mainPictures {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 1em 2em 1em 2em;
+}
+
+.mainPictures > img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.mainContact {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 1em 2em 1em 2em;
+}
+
+.formContact {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.formNews {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+section {
+  display: block;
+  grid-template-columns: 50% 50%;
+  width: 80%;
+  padding: 12em 2em 0 2em;
+}
+
+/* FOOTER */
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  height: 25vh;
+  background-color: #62d2a2;
+  color: white; /* Tekstkleur */
+  text-align: center; /* Centreer de tekst in de kolommen */
+  margin-bottom: 1.5em;
+}
+
+.colFooter {
+  padding: 20px;
+  /*border: 1px solid #444;*/
+}
+
+#colLeft {
+  margin-left: 22%;
+}
+
+#colRight {
+  display: flex;
+  align-items: left;
+}
+
+footer > div > h4 {
+  margin: 1em 0em;
+}
+
+footer > div > ul {
+  list-style-type: none;
+}
+
+.sitemap {
+  text-decoration: none;
+  color: white;
+}
+
+.imgSocial {
+  width: 25%;
+  padding: 0.5em;
+}
+
+/* FORMS */
+form {
+  margin-top: 0.7em;
+}
+
+input,
+textarea {
+  margin-top: 0.5em;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Veronique Vleugels" />
+    <meta name="robots" content="index, follow" />
+    <title>Veronique-Vleugels-contact</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="banner">
+        <img
+          id="imgBanner"
+          src="img/thumbnail_home-banner.jpg"
+          alt="banner met een hoofding voor de homepagina"
+        />
+      </div>
+    </header>
+
+    <main class="mainContact">
+      <div class="formContact">
+        <h1>Contactformulier</h1>
+        <form action="somepage.php" method="post">
+          <div>
+            <label for="naam">Naam :</label>
+            <input type="text" name="naam" id="naam" />
+          </div>
+          <div>
+            <label for="email">E-mailadres :</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div>
+            <label for="onderwerp">Onderwerp :</label>
+            <input type="text" name="onderwerp" id="onderwerp" />
+          </div>
+          <div>
+            <label for="vraag">Uw vraag :</label>
+            <textarea name="vraag" rows="3" cols="45"></textarea>
+          </div>
+          <div>
+            <input type="submit" value="Verzenden" />
+          </div>
+        </form>
+      </div>
+      <div class="formNews">
+        <h1>Nieuwsbrief</h1>
+        <form action="somepage.php" method="post">
+          <div>
+            <label for="email">E-mailadres :</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div>
+            <input type="submit" value="Inschrijven" />
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="colFooter" id="colLeft">
+        <h4>Sitemap</h4>
+        <ul>
+          <li><a href="index.html" class="sitemap">Home</a></li>
+          <li><a href="cv.html" class="sitemap">CV</a></li>
+          <li><a href="portfolio.html" class="sitemap">Portfolio</a></li>
+          <li><a href="diensten.html" class="sitemap">Diensten</a></li>
+          <li><a href="contact.html" class="sitemap">Contact</a></li>
+        </ul>
+      </div>
+      <div class="colFooter">
+        <h4>Socials</h4>
+        <a
+          href="https://www.linkedin.com/in/veronique-v-142211124/"
+          target="_blank"
+          ><img src="img/linkedin.svg" alt="logo linkedin" class="imgSocial"
+        /></a>
+        <a href="tel:+32477787548"
+          ><img src="img/whatsapp.svg" alt="logo whatsapp" class="imgSocial"
+        /></a>
+      </div>
+      <div class="colFooter">
+        <h4>Contactgegevens</h4>
+        <p>
+          Veronique Vleugels<br />
+          Postbus 302-2<br />
+          2440 Geel<br />
+          +32(0)477/78.75.48
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
